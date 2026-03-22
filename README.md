@@ -30,13 +30,12 @@ This project was developed for **RAG Assignment 3** and combines:
 - [Repository Structure](#repository-structure)
 - [Setup](#setup)
 - [Running the Project](#running-the-project)
-- [Current Status](#current-status)
 
 ---
 
 ## Architecture Diagram
 
-The detailed architecture diagram is documented in `docs/Agentic_RAG_architecture.md`.
+The detailed architecture diagram is documented in [docs/Agentic_RAG_architecture.md](docs/Agentic_RAG_architecture.md).
 
 ## UI Preview
 

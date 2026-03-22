@@ -1,0 +1,426 @@
+[
+  {
+    "id": "tier0_prof_cert_definition",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is a professional certification?",
+    "reference": "A professional certification is a credential that validates job-relevant knowledge or skills against a defined standard, usually through an assessment rather than simple participation."
+  },
+  {
+    "id": "tier0_cert_vs_completion",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "How is a professional certification different from a certificate of completion?",
+    "reference": "A professional certification verifies competence against an external standard, while a certificate of completion mainly shows that someone finished a course or learning activity."
+  },
+  {
+    "id": "tier0_prompt_engineering",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is prompt engineering?",
+    "reference": "Prompt engineering is the practice of designing instructions and context so a language model produces more accurate, useful, and reliable outputs."
+  },
+  {
+    "id": "tier0_context_management",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is context management in an AI system?",
+    "reference": "Context management is the practice of selecting, structuring, and maintaining the information given to a model so it can respond effectively without confusion or overload."
+  },
+  {
+    "id": "tier0_hallucination",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is hallucination in a RAG system?",
+    "reference": "Hallucination in a RAG system is when the model produces content that is unsupported, fabricated, or inconsistent with the retrieved evidence."
+  },
+  {
+    "id": "tier0_semantic_cache",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is a semantic cache?",
+    "reference": "A semantic cache stores answers for previously seen questions and reuses them for new questions that are meaningfully similar, rather than only exact string matches."
+  },
+  {
+    "id": "tier0_vectorstore",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is a vector store in a RAG pipeline?",
+    "reference": "A vector store is a database that stores embedding vectors so semantically similar documents or chunks can be retrieved for a query."
+  },
+  {
+    "id": "tier0_multihop",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What does multi-hop retrieval mean?",
+    "reference": "Multi-hop retrieval means answering a question by gathering and combining evidence from more than one retrieval step or source."
+  },
+  {
+    "id": "tier0_singlehop_vs_multihop",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "How is single-hop retrieval different from multi-hop retrieval?",
+    "reference": "Single-hop retrieval uses one main retrieval step or evidence pool, while multi-hop retrieval combines evidence from multiple retrieval steps, sources, or sub-questions."
+  },
+  {
+    "id": "tier0_retrieval_precision",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is retrieval precision?",
+    "reference": "Retrieval precision is the proportion of retrieved items that are actually relevant to the question."
+  },
+  {
+    "id": "tier0_retrieval_recall",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is retrieval recall?",
+    "reference": "Retrieval recall is the proportion of relevant information that the retriever successfully returns."
+  },
+  {
+    "id": "tier0_faithfulness",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What does faithfulness mean in RAG evaluation?",
+    "reference": "Faithfulness measures whether an answer is supported by the evidence provided to the model rather than invented or contradicted by the context."
+  },
+  {
+    "id": "tier0_answer_relevance",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is answer relevance in an evaluation metric?",
+    "reference": "Answer relevance measures how directly and completely the answer addresses the user’s question."
+  },
+  {
+    "id": "tier0_chunking",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is chunking in document retrieval?",
+    "reference": "Chunking is the process of splitting documents into smaller pieces so they can be indexed and retrieved more effectively."
+  },
+  {
+    "id": "tier0_parent_child_chunking",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is parent-child chunking?",
+    "reference": "Parent-child chunking stores smaller child chunks for retrieval while preserving links to larger parent sections so broader context can be recovered during answering."
+  },
+  {
+    "id": "tier0_router",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is a router in an adaptive RAG system?",
+    "reference": "A router is a component that decides which answering path to use, such as direct LLM response, vector store retrieval, web search, or multi-hop processing."
+  },
+  {
+    "id": "tier0_query_decomposition",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is query decomposition?",
+    "reference": "Query decomposition is the process of breaking a complex question into smaller standalone sub-questions that can be answered and then merged."
+  },
+  {
+    "id": "tier0_doc_snapshot",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "What is a local documentation snapshot?",
+    "reference": "A local documentation snapshot is a saved copy of source material stored locally so it can be indexed and queried without depending on live web access."
+  },
+  {
+    "id": "tier0_cache_bypass_recency",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "Why should time-sensitive questions often bypass a semantic cache?",
+    "reference": "Time-sensitive questions can become outdated quickly, so bypassing the semantic cache reduces the risk of returning stale answers."
+  },
+  {
+    "id": "tier0_why_use_rag",
+    "tier": "tier_0",
+    "expected_route": "llm_direct",
+    "question": "Why use retrieval-augmented generation instead of relying only on a language model?",
+    "reference": "Retrieval-augmented generation helps ground answers in external evidence, improves factual accuracy on source-specific questions, and reduces unsupported responses."
+  },
+
+  {
+    "id": "tier1_local_exam_scope",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local certification exam guide PDF, what does the Claude Certified Architect – Foundations exam cover?",
+    "reference": "The exam guide describes the exam content, domains, task statements, sample questions, and preparation strategies. It says the certification tests foundational knowledge across Claude Code, the Claude Agent SDK, the Claude API, and Model Context Protocol."
+  },
+  {
+    "id": "tier1_local_exam_format_score",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local certification exam guide PDF, what response format and passing score does the exam use?",
+    "reference": "The guide says all exam questions are multiple choice with one correct answer and three distractors. Results are reported on a scaled score from 100 to 1000, and the minimum passing score is 720."
+  },
+  {
+    "id": "tier1_local_exam_preparation",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local certification exam guide PDF, how does the guide recommend preparing for the certification?",
+    "reference": "The guide recommends building an agent with the Claude Agent SDK, configuring Claude Code for a real project, designing and testing MCP tools, building a structured data extraction pipeline, practicing prompt engineering and context management, reviewing escalation patterns, and completing the practice exam."
+  },
+  {
+    "id": "tier1_local_exam_domains",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local certification exam guide PDF, which major knowledge areas are assessed?",
+    "reference": "The exam guide assesses foundational knowledge across Claude Code, the Claude Agent SDK, the Claude API, and Model Context Protocol, along with practical understanding of workflows and system design patterns."
+  },
+  {
+    "id": "tier1_local_exam_scoring_scale",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local certification exam guide PDF, what scoring scale is used for results?",
+    "reference": "The exam guide states that results are reported on a scaled score from 100 to 1000."
+  },
+  {
+    "id": "tier1_local_exam_question_style",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local certification exam guide PDF, how are the exam questions structured?",
+    "reference": "The exam guide says the exam uses multiple-choice questions with one correct answer and three distractors."
+  },
+  {
+    "id": "tier1_local_claude101_topics",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local claude_101.md snapshot, what topics does Claude 101 cover?",
+    "reference": "Claude 101 covers core Claude usage for everyday work, including first conversations with Claude, getting better results, projects, artifacts, skills, connecting tools, enterprise search, research mode, role-based use cases, and it ends with a certificate of completion."
+  },
+  {
+    "id": "tier1_local_building_api_topics",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local Building with the Claude API.md snapshot, what topics does that course cover?",
+    "reference": "Building with the Claude API covers how developers use the Claude API to build applications, including prompting patterns, structured outputs, workflows, and practical implementation considerations."
+  },
+  {
+    "id": "tier1_local_claude_code_topics",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local claude_code_in_action.md snapshot, what topics does Claude Code in Action cover?",
+    "reference": "Claude Code in Action covers coding assistant architecture, tool use, context management, automation, MCP servers, GitHub integration, and planning or reasoning workflows."
+  },
+  {
+    "id": "tier1_local_mcp_topics",
+    "tier": "tier_1",
+    "expected_route": "vectorstore",
+    "question": "According to the local introduction-to-model-context-protocol.md snapshot, what topics does the course cover?",
+    "reference": "Introduction to Model Context Protocol explains the purpose of MCP, how tools and context are exposed to models, and how MCP supports structured integrations between models and external systems."
+  },
+
+  {
+    "id": "tier1_web_courses_list",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, which Claude-builder-relevant courses are currently listed on the Anthropic Courses site?",
+    "reference": "As of March 21, 2026, the Anthropic Courses site lists Claude Code in Action, Claude 101, Building with the Claude API, and Introduction to Model Context Protocol, along with additional AI Fluency courses."
+  },
+  {
+    "id": "tier1_web_claude101_listed",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, is Claude 101 currently listed on the Anthropic Courses site?",
+    "reference": "Yes. As of March 21, 2026, Claude 101 is listed on the Anthropic Courses site."
+  },
+  {
+    "id": "tier1_web_building_api_listed",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, is Building with the Claude API currently listed on the Anthropic Courses site?",
+    "reference": "Yes. As of March 21, 2026, Building with the Claude API is listed on the Anthropic Courses site."
+  },
+  {
+    "id": "tier1_web_claude_code_listed",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, is Claude Code in Action currently listed on the Anthropic Courses site?",
+    "reference": "Yes. As of March 21, 2026, Claude Code in Action is listed on the Anthropic Courses site."
+  },
+  {
+    "id": "tier1_web_mcp_listed",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, is Introduction to Model Context Protocol currently listed on the Anthropic Courses site?",
+    "reference": "Yes. As of March 21, 2026, Introduction to Model Context Protocol is listed on the Anthropic Courses site."
+  },
+  {
+    "id": "tier1_web_claude101_page_topics",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, what does the Anthropic Courses page say Claude 101 covers?",
+    "reference": "As of March 21, 2026, the Anthropic Courses page describes Claude 101 as covering core Claude usage for everyday work, including features and workflows for practical use."
+  },
+  {
+    "id": "tier1_web_building_api_page_topics",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, what does the Anthropic Courses page say Building with the Claude API covers?",
+    "reference": "As of March 21, 2026, the Anthropic Courses page describes Building with the Claude API as covering developer-oriented application-building patterns using the Claude API."
+  },
+  {
+    "id": "tier1_web_claude_code_page_topics",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, what does the Anthropic Courses page say Claude Code in Action covers?",
+    "reference": "As of March 21, 2026, the Anthropic Courses page says Claude Code in Action covers coding assistant architecture, Claude Code tool use, context management, custom automation, MCP servers, GitHub integration, and planning or reasoning workflows."
+  },
+  {
+    "id": "tier1_web_mcp_page_topics",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, what does the Anthropic Courses page say Introduction to Model Context Protocol covers?",
+    "reference": "As of March 21, 2026, the Anthropic Courses page describes Introduction to Model Context Protocol as covering MCP concepts and structured integrations between models and external tools or systems."
+  },
+  {
+    "id": "tier1_web_builder_courses_count",
+    "tier": "tier_1",
+    "expected_route": "web_search",
+    "question": "As of today, how many builder-relevant Claude courses are listed on the Anthropic Courses site among Claude 101, Claude Code in Action, Building with the Claude API, and Introduction to Model Context Protocol?",
+    "reference": "As of March 21, 2026, all four of those builder-relevant courses are listed, so the count is four."
+  },
+
+  {
+    "id": "tier2_local_exam_vs_claude101",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Compare the local certification exam guide PDF and the local claude_101.md snapshot: how do they differ in focus?",
+    "reference": "The exam guide focuses on assessed competencies, domains, and preparation for professional certification, while Claude 101 focuses on introductory and practical everyday use of Claude features and workflows."
+  },
+  {
+    "id": "tier2_local_exam_vs_building_api",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Compare the local certification exam guide PDF and the local Building with the Claude API.md snapshot: how do they differ in emphasis?",
+    "reference": "The exam guide emphasizes what knowledge and skills are assessed for certification, while Building with the Claude API emphasizes practical developer implementation patterns and API usage."
+  },
+  {
+    "id": "tier2_local_exam_vs_claude_code",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Compare the local certification exam guide PDF and the local claude_code_in_action.md snapshot: how do they differ in emphasis?",
+    "reference": "The exam guide frames Claude Code as part of certification knowledge and preparation, while Claude Code in Action teaches hands-on coding assistant usage, tool use, automation, and engineering workflows."
+  },
+  {
+    "id": "tier2_local_exam_vs_mcp",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Compare the local certification exam guide PDF and the local introduction-to-model-context-protocol.md snapshot: how do they differ in emphasis?",
+    "reference": "The exam guide treats Model Context Protocol as part of foundational certification knowledge, while the MCP course snapshot focuses on explaining the protocol and how structured integrations work."
+  },
+  {
+    "id": "tier2_local_claude101_vs_claude_code",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Compare the local claude_101.md snapshot and the local claude_code_in_action.md snapshot: how do the two courses differ in focus?",
+    "reference": "Claude 101 is a broad introductory course about using Claude in everyday work, while Claude Code in Action focuses on coding workflows, tool use, automation, MCP servers, and engineering-oriented practices."
+  },
+  {
+    "id": "tier2_local_claude101_vs_mcp",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Compare the local claude_101.md snapshot and the local introduction-to-model-context-protocol.md snapshot: how do the two courses differ in scope?",
+    "reference": "Claude 101 covers general Claude usage across common features and workflows, while Introduction to Model Context Protocol focuses specifically on MCP concepts, tool exposure, and structured model integrations."
+  },
+  {
+    "id": "tier2_local_exam_and_claude101_overlap",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local certification exam guide PDF and the local claude_101.md snapshot, what themes appear in both sources?",
+    "reference": "Both sources cover Claude-related capabilities and practical usage concepts, but the exam guide frames them as assessed competencies while Claude 101 presents them as learning content for users."
+  },
+  {
+    "id": "tier2_local_exam_and_mcp_overlap",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local certification exam guide PDF and the local introduction-to-model-context-protocol.md snapshot, what shared theme appears in both sources?",
+    "reference": "Both include Model Context Protocol as an important topic, but the exam guide treats it as part of certification scope while the MCP course snapshot focuses on explanation and integration details."
+  },
+  {
+    "id": "tier2_local_exam_and_claude_code_overlap",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local certification exam guide PDF and the local claude_code_in_action.md snapshot, what shared theme appears in both sources?",
+    "reference": "Both involve Claude Code-related concepts and practical workflows, but the exam guide presents them as certification-relevant knowledge while Claude Code in Action focuses on hands-on engineering use."
+  },
+  {
+    "id": "tier2_local_building_api_vs_mcp",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Compare the local Building with the Claude API.md snapshot and the local introduction-to-model-context-protocol.md snapshot: how do they differ?",
+    "reference": "Building with the Claude API focuses on application-building patterns using the Claude API, while Introduction to Model Context Protocol focuses on exposing tools and context through MCP for structured integrations."
+  },
+
+  {
+    "id": "tier2_local_claude101_plus_web_listing",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local claude_101.md snapshot and the current Anthropic Courses site, what topics does Claude 101 cover locally, and is it currently listed?",
+    "reference": "The local Claude 101 snapshot says the course covers everyday Claude usage, including conversations, projects, artifacts, skills, tools, enterprise search, research mode, and role-based use cases. As of March 21, 2026, it is currently listed on the Anthropic Courses site."
+  },
+  {
+    "id": "tier2_local_building_api_plus_web_listing",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local Building with the Claude API.md snapshot and the current Anthropic Courses site, what topics does that course cover locally, and is it currently listed?",
+    "reference": "The local Building with the Claude API snapshot says the course covers developer use of the Claude API, including prompting patterns, structured outputs, workflows, and implementation considerations. As of March 21, 2026, it is currently listed on the Anthropic Courses site."
+  },
+  {
+    "id": "tier2_local_claude_code_plus_web_listing",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local claude_code_in_action.md snapshot and the current Anthropic Courses site, what topics does Claude Code in Action cover locally, and is it currently listed?",
+    "reference": "The local Claude Code in Action snapshot says the course covers coding assistant architecture, tool use, context management, automation, MCP servers, GitHub integration, and planning or reasoning workflows. As of March 21, 2026, it is currently listed on the Anthropic Courses site."
+  },
+  {
+    "id": "tier2_local_mcp_plus_web_listing",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local introduction-to-model-context-protocol.md snapshot and the current Anthropic Courses site, what topics does that course cover locally, and is it currently listed?",
+    "reference": "The local Introduction to Model Context Protocol snapshot says the course covers MCP concepts, tool and context exposure, and structured integrations between models and external systems. As of March 21, 2026, it is currently listed on the Anthropic Courses site."
+  },
+  {
+    "id": "tier2_exam_plus_web_mcp_alignment",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local certification exam guide PDF and the current Anthropic Courses site, which currently listed course is most directly aligned with MCP preparation?",
+    "reference": "The exam guide includes MCP as a tested knowledge area, and as of March 21, 2026, Introduction to Model Context Protocol is currently listed on the Anthropic Courses site, making it the most directly aligned listed course for MCP preparation."
+  },
+  {
+    "id": "tier2_exam_plus_web_api_alignment",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local certification exam guide PDF and the current Anthropic Courses site, which currently listed course is most directly aligned with Claude API preparation?",
+    "reference": "The exam guide includes the Claude API as a tested knowledge area, and as of March 21, 2026, Building with the Claude API is currently listed on the Anthropic Courses site, making it the most directly aligned listed course for API preparation."
+  },
+  {
+    "id": "tier2_exam_plus_web_claude_code_alignment",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local certification exam guide PDF and the current Anthropic Courses site, which currently listed course is most directly aligned with Claude Code preparation?",
+    "reference": "The exam guide includes Claude Code within its scope, and as of March 21, 2026, Claude Code in Action is currently listed on the Anthropic Courses site, making it the most directly aligned listed course for Claude Code preparation."
+  },
+  {
+    "id": "tier2_exam_plus_web_builder_courses",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local certification exam guide PDF and the current Anthropic Courses site, which currently listed courses align most clearly with the major builder knowledge areas named in the guide?",
+    "reference": "The exam guide names Claude Code, the Claude API, and MCP among its major knowledge areas. As of March 21, 2026, the currently listed courses that align most clearly are Claude Code in Action, Building with the Claude API, and Introduction to Model Context Protocol."
+  },
+  {
+    "id": "tier2_local_claude101_vs_web_claude101",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local claude_101.md snapshot and the current Anthropic Courses page for Claude 101, how does the local summary align with the current course listing?",
+    "reference": "Both describe Claude 101 as a broad course about practical Claude usage. The local snapshot provides a fuller topic list including conversations, projects, artifacts, tools, enterprise search, research mode, and role-based use cases, while the current course page confirms the course is live and presents its current public description."
+  },
+  {
+    "id": "tier2_local_claude_code_vs_web_claude_code",
+    "tier": "tier_2",
+    "expected_route": "multi_hop",
+    "question": "Using the local claude_code_in_action.md snapshot and the current Anthropic Courses page for Claude Code in Action, how does the local summary align with the current course listing?",
+    "reference": "Both describe Claude Code in Action as focused on coding assistant workflows and engineering usage. The local snapshot lists tool use, context management, automation, MCP servers, GitHub integration, and planning workflows, while the current course page confirms the course is live and presents its current public description."
+  }
+]

@@ -1,0 +1,49 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --bg: #eef2f7;
+  --panel: #ffffff;
+  --panel-muted: #f6f8fb;
+  --text: #102132;
+  --text-muted: #5d6b78;
+  --border: #d7dee6;
+  --accent: #0c6b58;
+  --accent-soft: #e2f3ef;
+  --danger: #b93838;
+  --danger-soft: #fdecec;
+  --shadow: 0 18px 40px rgba(15, 35, 52, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(12, 107, 88, 0.08), transparent 30%),
+    linear-gradient(180deg, #f7fafc 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--accent);
+}

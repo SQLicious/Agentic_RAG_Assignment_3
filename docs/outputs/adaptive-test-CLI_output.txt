@@ -1,0 +1,123 @@
+$ python -m src.nodes.adaptive_test.py
+====================================================================================================
+QUESTION: What is a professional certification?
+TIER: Tier 0 - llm_direct
+PLAN TYPE: single
+PLAN REASON: The question is a single intent and should stay as one pass.
+SUBQUESTIONS: [{'question': 'What is a professional certification', 'route_hint': 'llm_direct'}]
+FINAL ANSWER: A professional certification is a credential awarded by a recognized organization that demonstrates an individual's expertise, knowledge, and skills in a specific field or profession. It typically requires passing an exam and may involve meeting certain educational or experience requirements. Certifications are often used to enhance career prospects and validate professional competence.
+CITATIONS: []
+
+--- SUB RESULT 1 ---
+QUESTION: What is a professional certification
+TIER: Tier 0 - llm_direct
+ROUTE: llm_direct
+ANSWER: A professional certification is a credential awarded by a recognized organization that demonstrates an individual's expertise, knowledge, and skills in a specific field or profession. It typically requires passing an exam and may involve meeting certain educational or experience requirements. Certifications are often used to enhance career prospects and validate professional competence.
+CITATIONS: []
+====================================================================================================
+QUESTION: What does the Claude certification exam guide cover?
+TIER: Tier 1 - single-route RAG
+PLAN TYPE: single
+PLAN REASON: The question is straightforward and can be answered in one pass without needing to split into sub-questions.
+SUBQUESTIONS: [{'question': 'What topics are included in the Claude certification exam guide', 'route_hint': 'vectorstore'}]
+FINAL ANSWER: From the provided exam guide content, the guide covers these topics:
+
+- High-level goals: architecture, configuration, and tradeoffs for production Claude deployments; domains, task statements, sample questions, and preparation strategies.
+- Claude Agent SDK / agentic applications:
+  - Building complete agentic loops (tool calling, error handling, session management)
+  - Multi-agent orchestration, spawning subagents, subagent delegation, passing context between agents
+  - Lifecycle hooks and tool integration
+- Claude Code / project configuration:
+  - CLAUDE.md configuration hierarchy
+  - Path‑specific rules (.claude/rules/)
+  - Agent Skills and custom skills (frontmatter options such as context: fork, allowed-tools)
+  - Integrating MCP servers
+- MCP tools and tool design/testing:
+  - Writing clear tool descriptions that differentiate similar tools
+  - Implementing structured error responses (error categories, retryable flags)
+  - Testing tool selection reliability with ambiguous requests
+- Practical preparation tasks: hands‑on exercises implementing agents, configuring Claude Code, designing/testing tools, and building developer productivity tools
+
+If you want, I can extract these into a compact checklist for study/practice.
+CITATIONS: ['Claude Certified Architect – Foundations Certification Exam Guide (page 1)', 'Claude Certified Architect – Foundations Certification Exam Guide (page 39)']
+
+--- SUB RESULT 1 ---
+QUESTION: What topics are included in the Claude certification exam guide
+TIER: None
+ROUTE: vectorstore
+ANSWER: From the provided exam guide content, the guide covers these topics:
+
+- High-level goals: architecture, configuration, and tradeoffs for production Claude deployments; domains, task statements, sample questions, and preparation strategies.
+- Claude Agent SDK / agentic applications:
+  - Building complete agentic loops (tool calling, error handling, session management)
+  - Multi-agent orchestration, spawning subagents, subagent delegation, passing context between agents
+  - Lifecycle hooks and tool integration
+- Claude Code / project configuration:
+  - CLAUDE.md configuration hierarchy
+  - Path‑specific rules (.claude/rules/)
+  - Agent Skills and custom skills (frontmatter options such as context: fork, allowed-tools)
+  - Integrating MCP servers
+- MCP tools and tool design/testing:
+  - Writing clear tool descriptions that differentiate similar tools
+  - Implementing structured error responses (error categories, retryable flags)
+  - Testing tool selection reliability with ambiguous requests
+- Structured data extraction pipelines:
+  - Using tool_use with JSON schemas
+  - Validation–retry loops and schema design (optional/nullable fields)
+  - Batch processing (Message Batches workflows)
+  - Extracting structured data from unstructured documents
+- Practical preparation tasks: hands‑on exercises implementing agents, configuring Claude Code, designing/testing tools, and building developer productivity tools
+
+If you want, I can extract these into a compact checklist for study/practice.
+If you want, I can extract these into a compact checklist for study/practice.
+CITATIONS: ['Claude Certified Architect – Foundations Certification Exam Guide (page 1)', 'Claude Certified Architect – Foundations Certification Exam Guide (page 39)']
+If you want, I can extract these into a compact checklist for study/practice.
+If you want, I can extract these into a compact checklist for study/practice.
+CITATIONS: ['Claude Certified Architect – Foundations Certification Exam Guide (page 1)', 'Claude Certified Architect – Foundations Certification Exam Guide (page 39)']      ION: Has there been any Professional Claude certification launched recently? What is the syllabus for this exam?
+====================================================================================================
+CITATIONS: ['Claude Certified Architect – Foundations Certification Exam Guide (page 1)', 'Claude Certified Architect – Foundations Certification Exam Guide (page 39)'] 
+====================================================================================================
+QUESTION: Has there been any Professional Claude certification launched recently? What is the syllabus for this exam?
+QUESTION: Has there been any Professional Claude certification launched recently? What is the syllabus for this exam?
+TIER: Tier 2 - multi-hop RAG
+PLAN TYPE: multi
+PLAN REASON: The question requires checking for recent developments across multiple sources regarding the launch of the Professional Claude certification and itsQUESTION: Has there been any Professional Claude certification launched recently? What is the syllabus for this exam?
+TIER: Tier 2 - multi-hop RAG
+PLAN TYPE: multi
+PLAN REASON: The question requires checking for recent developments across multiple sources regarding the launch of the Professional Claude certification and iTIER: Tier 2 - multi-hop RAG
+PLAN TYPE: multi
+PLAN REASON: The question requires checking for recent developments across multiple sources regarding the launch of the Professional Claude certification and its syllabus, which likely involves different documents or announcements.
+SUBQUESTIONS: [{'question': 'Has there been any recent launch of the Professional Claude certification', 'route_hint': 'web_search'}, {'question': 'What is thPLAN TYPE: multi
+PLAN REASON: The question requires checking for recent developments across multiple sources regarding the launch of the Professional Claude certification and PLAN TYPE: multi
+PLAN REASON: The question requires checking for recent developments across multiple sources regarding the launch of the Professional Claude certification andPLAN TYPE: multi
+PLAN REASON: The question requires checking for recent developments across multiple sources regarding the launch of the Professional Claude certificationd its syllabus, which likely involves different documents or announcements.
+SUBQUESTIONS: [{'question': 'Has there been any recent launch of the Professional Claude certification', 'route_hint': 'web_search'}, {'question': 'Whatd its syllabus, which likely involves different documents or announcements.
+d its syllabus, which likely involves different documents or announcements.
+SUBQUESTIONS: [{'question': 'Has there been any recent launch of the Professional Claude certification', 'route_hint': 'web_search'}, {'question': 'Whad its syllabus, which likely involves different documents or announcements.
+SUBQUESTIONS: [{'question': 'Has there been any recent launch of the Professional Claude certification', 'route_hint': 'web_search'}, {'question': 'Wd its syllabus, which likely involves different documents or announcements.
+SUBQUESTIONS: [{'question': 'Has there been any recent launch of the Professional Claude certification', 'route_hint': 'web_search'}, {'question': 'Wd its syllabus, which likely involves different documents or announcements.
+SUBQUESTIONS: [{'question': 'Has there been any recent launch of the Professional Claude certification', 'route_hint': 'web_search'}, {'question': 'What is the syllabus for the Professional Claude certification exam', 'route_hint': 'vectorstore'}]
+FINAL ANSWER: I couldn't verify whether a Professional Claude certification was launched recently; the available exam guide lists this syllabus:     
+- Building agentic applications with the Claude Agent SDK: agent loop, tool calling, error handling, session management, spawning subagents, and context passing.
+- Configuring Claude Code for real projects: CLAUDE.md configuration hierarchy, .claude/rules path-specific rules, Agent Skills frontmatter (e.g., context: fork, allowed-tools), and MCP server integration.
+- Designing and testing MCP tools: clear tool descriptions, structured error responses (categories, retryable flags), and tool-selection reliability testing.
+- Structured data extraction pipelines: tool_use with JSON schemas, validation/retry loops, optional/nullable fields, and Message Batch processing.  
+CITATIONS: ['Claude Certified Architect – Foundations Certification Exam Guide (page 39)', 'Claude Certified Architect – Foundations Certification Exam Guide (page 1)']
+
+--- SUB RESULT 1 ---
+QUESTION: Has there been any recent launch of the Professional Claude certification
+TIER: Tier 1 - single-route RAG
+ROUTE: web_search
+ANSWER: Web search is currently unavailable: HTTP Error 402: Payment Required I could not verify the latest information right now.
+CITATIONS: []
+
+--- SUB RESULT 2 ---
+QUESTION: What is the syllabus for the Professional Claude certification exam
+TIER: Tier 1 - single-route RAG
+ROUTE: web_search
+ANSWER: The syllabus covers these core domains:
+- Building agentic applications with the Claude Agent SDK: complete agentic loop, tool calling, error handling, session management, spawning subagents, and passing context.
+- Configuring Claude Code for real projects: CLAUDE.md configuration hierarchy, .claude/rules path-specific rules, Agent Skills with frontmatter options (e.g., context: fork, allowed-tools), and integrating an MCP server.
+- Designing and testing MCP tools: clear tool descriptions, structured error responses (categories, retryable flags), and tool-selection reliability testing.
+- Structured data extraction pipelines: tool_use with JSON schemas, validation-retry loops, optional/nullable fields, and batch processing with Message Batches.
+CITATIONS: ['Claude Certified Architect – Foundations Certification Exam Guide (page 39)', 'Claude Certified Architect – Foundations Certification Exam Guide (page 1)']

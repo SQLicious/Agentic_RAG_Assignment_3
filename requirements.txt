@@ -1,0 +1,17 @@
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-chroma
+langchain-text-splitters
+langgraph
+chromadb
+pydantic
+python-dotenv
+pypdf
+beautifulsoup4
+jupyter
+ipykernel
+ragas>=0.4,<0.5
+fastapi
+uvicorn

@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+ui/.env
+ui/.env.*
+!ui/.env.example
+.venv/
+.uv-python/
+.uv-cache/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/chroma/
+data/cache/
+adaptive_test_output.txt
+*.log

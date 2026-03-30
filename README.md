@@ -59,7 +59,7 @@ ChromaDB                   Execution Tier?
                                 └─ Tier 2 → Decompose Query → Run Sub-graphs → Merge Answers → Final Answer with Citations to User
 
 #### Adaptive RAG Runtime Architecture
-![Architecture Diagram (https://github.com/SQLicious/Agentic_RAG_Assignment_3/blob/2630795de1b4a5e5010376bd15f69946ed7239ca/docs/Architecture%20diagram.png))
+![Architecture Diagram](docs/Architecture_diagram.png)
 
 ## UI Preview
 

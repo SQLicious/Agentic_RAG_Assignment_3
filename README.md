@@ -37,6 +37,7 @@ This project was developed for **RAG Assignment 3** and combines:
 
 The detailed architecture diagram of the entire system 
 
+```text
 [INGESTION]              [ADAPTIVE RAG RUNTIME]                               [RAGAS EVALUATION]
 
 Local Docs               User Query                                          questions.json
@@ -57,7 +58,7 @@ ChromaDB                   Execution Tier?
                                 │              │                                └─ fallback → Brave Search → Generator → Final Answer
                                 │              └─ Brave Search → Generator
                                 └─ Tier 2 → Decompose Query → Run Sub-graphs → Merge Answers → Final Answer with Citations to User
-
+```
 #### Adaptive RAG Runtime Architecture
 ![Architecture Diagram](docs/Architecture_diagram.png)
 

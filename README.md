@@ -35,7 +35,31 @@ This project was developed for **RAG Assignment 3** and combines:
 
 ## Architecture Diagram
 
-The detailed architecture diagram is documented in [docs/Agentic_RAG_architecture.md](docs/Agentic_RAG_architecture.md).
+The detailed architecture diagram of the entire system 
+
+[INGESTION]              [ADAPTIVE RAG RUNTIME]                               [RAGAS EVALUATION]
+
+Local Docs               User Query                                          questions.json
+   ↓                     Semantic Cache                                          ├─ RAGAS Runner ─► results.json
+Loader                      ↓                                                    │                    results.md
+   ↓                     Cache Hit?                                              └─ Ablation Runner ─► ablation_results.json
+Chunker                   ├─ yes → Cached Answer                                                      ablation_results.md
+   ├─ Parent Store        └─ no
+   ↓                           ↓
+Embeddings                    Planner
+   ↓                           ↓
+ChromaDB                   Execution Tier?
+                                ├─ Tier 0 → LLM Direct → Final Answer
+                                ├─ Tier 1 → Route Selector
+                                │              ├─ Retriever → Relevance → Relevant?
+                                │              │                   ├─ yes → Generator → Hallucination → Quality → Final Answer
+                                │              │                   └─ no → Rewriter → Retriever
+                                │              │                                └─ fallback → Brave Search → Generator → Final Answer
+                                │              └─ Brave Search → Generator
+                                └─ Tier 2 → Decompose Query → Run Sub-graphs → Merge Answers → Final Answer with Citations to User
+
+#### Adaptive RAG Runtime Architecture
+![Architecture Diagram](docs/architecture_diagram.png)
 
 ## UI Preview
 
